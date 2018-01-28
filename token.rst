@@ -1,0 +1,25 @@
+Tokens
+----------
+
+Library used to create tokens secures you against CSRF (Cross-Site Request Forgery), so against unauthorized executing of action.
+
+Initializing a token
+
+To be able to start using tokens for the Bootstrap.php file, you need to add the following to __construct
+
+.. code-block:: php
+
+ $this->session  = new Session(SESSION_NAME);
+ $this->token  = new Token($this->session);
+
+
+Example
+
+.. code-block:: php
+
+ if (!$this->baseClass->token->isValid('evidenceToken', (isset($_POST['token']) ? $_POST['token'] : null))) {
+     return ($view->renderJSON(array('return' => '0', 'response' => 'Formularz wygasł.')));
+ }
+            
+ $evidenceToken = $this->baseClass->token->generate('evidenceToken')->getToken('evidenceToken')
+ 
