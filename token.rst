@@ -12,13 +12,12 @@ To be able to start using tokens for the Bootstrap.php file, you need to add the
  $this->session  = new Session(SESSION_NAME);
  $this->token  = new Token($this->session);
 
-
-Example
+Example usage:
 
 .. code-block:: php
 
  if (!$this->baseClass->token->isValid('evidenceToken', (isset($_POST['token']) ? $_POST['token'] : null))) {
-     return ($view->renderJSON(array('return' => '0', 'response' => 'Formularz wygasł.')));
+     return Response::renderJSON(array('return' => '0', 'response' => 'Formularz wygasł.'));
  }
             
  $evidenceToken = $this->baseClass->token->generate('evidenceToken')->getToken('evidenceToken')
