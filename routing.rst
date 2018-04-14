@@ -114,7 +114,7 @@ Controller
 View
 -----
 
-assign - it's a method of the template engine that assignes value to a variable which is used in the template files
+assign - it's a method of the template engine that assignes value to a variable which is used in the template files.
 
 **View/templates/index.html.php**
 
@@ -188,7 +188,7 @@ Extention of the basic DframeRouter is DframeRouterResponse, adding functionalit
             'Pragma', 'no-cache'
         ]);
 
-For generating html
+For generating html.
 
 .. code-block:: php
 
