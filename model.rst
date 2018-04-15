@@ -15,10 +15,12 @@ In the model, you can create methods that have database queries and are responsi
          * return array(boolean, array)
          */
     
-        public function getRequestSettings($requestId){
+        public function getRequestSettings($requestId)
+        {
             $row = $this->baseClass->db->pdoQuery('SELECT * FROM `request_type` WHERE request_type_id = ?', array($requestId))->result();
-            return $this->methodResult(true, $row);        
-    }
+            return $this->methodResult(true, $row);     
+        }
+
 
 Notice that virtually all methods, except for a few, return the data in the form of a ready to read table and are returned by the method.
 
