@@ -9,8 +9,8 @@ To be able to start using tokens for the Bootstrap.php file, you need to add the
 
 .. code-block:: php
 
- $this->session  = new Session(SESSION_NAME);
- $this->token  = new Token($this->session);
+ $this->session  = new \Dframe\Session(SESSION_NAME);
+ $this->token  = new \Dframe\Token($this->session);
 
 Example usage:
 
