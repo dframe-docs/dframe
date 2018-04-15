@@ -21,13 +21,15 @@ In practise, it's used for many basic thing from data download. In the example a
  namespace Controller;
  use Dframe\Controller;
  use Dframe\Config;
+ use Dframe\Router\Response;
 
  class PageController extends Controller
  {
      /**
       * initial function call
       */
-     public function init(){
+     public function init()
+     {
 
      }
      
@@ -48,6 +50,7 @@ In practise, it's used for many basic thing from data download. In the example a
          if (!file_exists($patchController)) {  
              return $this->router->redirect('page/index');
          }
+         
          return Response::create($view->fetch('page/'.htmlspecialchars($_GET['action'])));
         
      }
