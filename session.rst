@@ -38,7 +38,7 @@ Simplicity and minimalism make you want to use the same class. In order to achie
 .. |sesok| cCode:: $_SESSION['ok']
 .. |baseclass| cCode:: $this->baseClass->session
 .. |false| cCode:: false
-.. |name| cCode:: $this->session = new Dframe\Session('name');
+.. |name| cCode:: $this->session = new \Dframe\Session('name');
 
 .. |newSession| cCode:: $session = new Session('HashSaltRandomForSession'); 
 .. |register| cCode:: $session->register(); // Set session_id and session_time - default 60 
