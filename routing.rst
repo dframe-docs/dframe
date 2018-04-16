@@ -100,7 +100,8 @@ Controller
          }
      }
  
-     public function error($status = '404'){
+     public function error($status = '404')
+     {
          $routerCodes = $this->router->response();
  
          if (!array_key_exists($status, $routerCodes::$code)) {
