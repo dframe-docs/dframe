@@ -58,6 +58,16 @@ defines the way the additional foo=bar parameters should be interpreted.
              )
          ),
          
+        ':task/:action' => array(
+            '[task]/[action]/[params]',
+            'task=[task]&action=[action]',
+            'params' => '(.*)',
+            '_params' => array(
+                '[name]/[value]/',
+                '[name]=[value]'
+            )
+         ),
+
          'default' => array(
              '[task]/[action]/[params]',
              'task=[task]&action=[action]',
@@ -126,9 +136,9 @@ Controller
 .. |router| cCode:: 
  <?php $this->router; ?>
 .. |page/index| cCode:: 
- <?php $this->router->makeUrl('page/index'); ?>
+ <?php $this->router->makeUrl(':task/:action?task=page&action=index'); ?>
 .. |$router| cCode:: {$router}
-.. |$makeurl| cCode:: {$router->makeUrl('index/page')}
+.. |$makeurl| cCode:: {$router->makeUrl(':task/:action?task=index&action=page&page=1')}
 
 
 View
@@ -148,10 +158,10 @@ assign - it's a method of the template engine that assignes value to a variable 
    Example site created using the Dframe Framework
 
    Routing:
-   <?php $this->router->makeurl('page/index'); ?> index/page
-   <?php $this->makeurl('error/404'); ?> page/404
+   <?php $this->router->makeurl(':task/:action?task=index&action=page'); ?> index/page
+   <?php $this->makeurl('error/:code?code=404'); ?> page/404
 
-   <?php $this->domain('https://examplephp.com')->makeurl('error/404'); ?> page/404
+   <?php $this->domain('https://examplephp.com')->makeurl('error/:code?code=404'); ?> page/404
 
    <?php include "footer.html.php" ?>
    Using only PHP
@@ -166,10 +176,10 @@ assign - it's a method of the template engine that assignes value to a variable 
    Example site created using the Dframe Framework
 
    Routing:
-   {$router->makeurl('page/index')} index page
-   {$router->makeurl('error/404')} page 404
+   {$router->makeurl(':task/:action?task=index&action=page')} index page
+   {$router->makeurl('error/:code?code=404')} page 404
 
-   {$router->domain('https://examplephp.com')->makeurl('error/404')} page 404
+   {$router->domain('https://examplephp.com')->makeurl('error/:code?code=404')} page 404
 
    {include file="footer.html.php"}
    S.M.A.R.T.Y Engine used in the example
@@ -230,4 +240,4 @@ For generating html.
 
 .. |makeurl| cCode:: $this->router->makeUrl('docs/:docsId?docsId=23');
 .. |header| cCode:: Header('Location: ""');
-.. |redirect| cCode:: $this->router->redirect('page/index');
+.. |redirect| cCode:: $this->router->redirect(':task/:action?task=index&action=page');
