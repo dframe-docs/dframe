@@ -35,7 +35,6 @@ defines the way the additional foo=bar parameters should be interpreted.
      'publicWeb' => '',              // Path for public web (web or public_html)
      'assetsPath' => 'assets',       // Path for public web (web or public_html)
 
-
      'docs/:pageId' => array(
          'docs/[pageId]/', 
          'task=page&action=[docsId]&type=docs'
