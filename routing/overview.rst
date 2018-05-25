@@ -1,3 +1,9 @@
+.. title:: Routing - Flexibility url creator
+
+.. meta::
+    :description: Routing - Flexibility url creator - dframeframework.com
+    :keywords: dframe, router, routing, urls, url, friendlyurl, htaccess, routes, dframeframework  
+
 Configuration
 ------------
 
