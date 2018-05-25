@@ -1,3 +1,10 @@
+.. title:: Controller - functions where you create and returns a Response
+
+.. meta::
+    :description: Controller - function where you create and returns a Response - dframeframework.com
+    :keywords: dframe, controller, response, router, dframeframework
+    
+
 Controller
 ---------
 
