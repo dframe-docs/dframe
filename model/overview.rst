@@ -1,4 +1,4 @@
-.. title:: Model - Send your query with database
+.. title:: Model - Create methods that have database queries
 
 .. meta::
     :description: Model - Send your query with database - dframeframework.com
