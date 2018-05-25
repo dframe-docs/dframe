@@ -221,9 +221,24 @@ Extention of the basic DframeRouter is DframeRouterResponse, adding functionalit
 
 For generating html.
 
+Render json
+
 .. code-block:: php
 
  return Response::renderJSON(array('return' => '1')); 
+
+Render json with callback
+
+.. code-block:: php
+
+ return Response::renderJSONP(array('return' => '1')); 
+
+Redirect
+
+.. code-block:: php
+
+ return Response::redirect(':task/:action?task=page&action=login'); 
+
 
 .. |https| cCode:: https
 .. |NAME_CONTROLLER| cCode:: NAME_CONTROLLER
