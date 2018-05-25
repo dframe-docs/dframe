@@ -1,3 +1,9 @@
+.. title:: Model - Send your query with database
+
+.. meta::
+    :description: Model - Send your query with database - dframeframework.com
+    :keywords: dframe, model, mysql, database, dframeframework  
+    
 ====
 Description
 ====
