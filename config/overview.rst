@@ -1,3 +1,10 @@
+.. title:: Config - Help you load configuration from file.
+
+.. meta::
+    :description: Help you load configuration from file. - dframeframework.com
+    :keywords: dframe, config, loading, loader, dframeframework
+    
+    
 ====
 Description
 ====
