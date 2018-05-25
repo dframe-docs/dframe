@@ -1,3 +1,9 @@
+.. title:: Session - Store information about the user
+
+.. meta::
+    :description: Session - Store information about the user - dframeframework.com
+    :keywords: dframe, Session, fingerprint, store, information, dframeframework   
+
 ====
 Description
 ====
