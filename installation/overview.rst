@@ -1,3 +1,9 @@
+.. title:: Installation - How to install dframe
+
+.. meta::
+    :description: Installation - How to install dframe - dframeframework.com
+    :keywords: dframe, instalation, composer, github, download, chmod, dframeframework   
+
 Download
 ----------
 
