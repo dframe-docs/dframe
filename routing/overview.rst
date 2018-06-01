@@ -134,7 +134,8 @@ Controller
          }
  
          $view->assign('error', $routerCodes::$code[$status]);
-         $view->render('errors/'.htmlspecialchars($status));
+         return Response::create($view->fetch('errors/' . htmlspecialchars($status)))->headers(array('refresh' => '4;' . $this->router->makeUrl(':task/:action?task=page&action=index')));
+
      }
  }
      
