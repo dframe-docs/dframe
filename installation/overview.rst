@@ -50,10 +50,17 @@ Not all folders exist at the start, but there are some. All files and folders, e
  chmod 777 -R app/View/uploads
  
  
+.. |chmod755| cCode:: chmod 755
+.. |chmod664| cCode:: chmod 664
+.. |www-data| cCode:: www-data
+
+ 
 HTTP Server
 ----------
 
 After installing, you should configure web server's document /web. Make sure you have loaded mod_rewrite
+
+
 
 .. |listing| customLi:: myTab
  :apache2: Apache (.htaccess)
@@ -94,8 +101,4 @@ After installing, you should configure web server's document /web. Make sure you
        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
        include fastcgi_params;
    }
-
-.. |chmod755| cCode:: chmod 755
-.. |chmod664| cCode:: chmod 664
-.. |www-data| cCode:: www-data
 
