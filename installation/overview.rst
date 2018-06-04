@@ -62,10 +62,12 @@ After installing, you should configure web server's document /web. Make sure you
 
 
 
-.. |listing| customLi:: myTab
+.. customLi:: myTab
  :apache2: Apache (.htaccess)
  :nginx: active/Nginx (.conf)
+ 
   .. code-block:: apache
+  
    RewriteEngine On
    
    #Deny access for hidden folders and files
@@ -81,6 +83,7 @@ After installing, you should configure web server's document /web. Make sure you
    RewriteCond %{REQUEST_FILENAME} !-f
    RewriteRule ^(.*)$ web/index.php [QSA,L]
   next
+  
   .. code-block:: nginx
   
    #Set root folder to web directory
