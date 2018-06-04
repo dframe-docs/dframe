@@ -37,6 +37,7 @@ You can also enter the repository and download the code in Dframe-demo.zip and r
 
  $ composer install
 
+After that you should have new project app skeleton.
 
 Directory Permissions
 ----------
