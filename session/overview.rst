@@ -4,9 +4,9 @@
     :description: Session - Store information about the user - dframeframework.com
     :keywords: dframe, Session, fingerprint, store, information, dframeframework   
 
-====
+
 Description
-====
+===========
 
 This is a simple framework element, allowing for quick session operations in php. One-line defining of a global variable.
 
