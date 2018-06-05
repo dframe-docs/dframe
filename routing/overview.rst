@@ -5,7 +5,7 @@
     :keywords: dframe, router, routing, urls, url, friendlyurl, htaccess, routes, dframeframework  
 
 Configuration
-------------
+-------------
 
 We define the table with adresses for our application in the configuration file
  
@@ -88,7 +88,7 @@ defines the way the additional foo=bar parameters should be interpreted.
  );
 
 Controller
----------
+-------------
 
  - makeUrl - is used for generating the full adress. For example |makeurl| - method used for redirections, equivalent of |header| but with a parameter being a key from the Config/router.php table. In case of using docs/:docsld it looks as the following |redirect|
 
@@ -149,7 +149,7 @@ Controller
 
 
 View
------
+-------------
 
 assign - it's a method of the template engine that assignes value to a variable which is used in the template files.
 
