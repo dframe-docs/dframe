@@ -5,7 +5,7 @@
     :keywords: dframe, router, routing, urls, url, friendlyurl, htaccess, routes, dframeframework  
 
 Configuration
--------------
+===========
 
 We define the table with adresses for our application in the configuration file
  
