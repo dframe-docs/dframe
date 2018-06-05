@@ -4,9 +4,9 @@
     :description: Model - Send your query with database - dframeframework.com
     :keywords: dframe, model, mysql, database, dframeframework  
     
-====
+
 Description
-====
+===========
 
 In the model, you can create methods that have database queries and are responsible for data processing. You have to remember to install dframe/database package before starting work. It's available on |github| GITHUB or through the composer.
 
