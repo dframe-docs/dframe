@@ -3,7 +3,7 @@
    :keywords: guide, tutorial, Good Practice, dframe framework, controller, model, php, php 7
 
 Good Practice
----------
+===========
 
 Goood practice allow keep your code in harmony. Writing code do not tell youtself that he is only for you. Will come once a time that you will need help somone. So if your code will be unreadable it will take more time to analyze what's the problem is.
 
