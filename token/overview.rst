@@ -5,7 +5,7 @@
     :keywords: dframe, Token, CSRF, tokens, Cross-Site Request Forgery, dframeframework  
 
 Tokens
-----------
+===========
 
 Library used to create tokens secures you against CSRF (Cross-Site Request Forgery), so against unauthorized executing of action.
 
