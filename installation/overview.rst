@@ -35,7 +35,8 @@ Or
 **Composer** is a tool for dependency management in PHP `(You can install from here) <https://getcomposer.org/download/>`_. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
 
 It will initialize the process of downloading the latest version of code available on github.com
-You can also enter the repository and download the code in Dframe-demo.zip and run:
+
+You can also enter the repository and download the code in `Dframe-demo.zip <https://github.com/dframe/dframe-demo/releases>`_. and run:
 
 .. code-block:: bash
 
