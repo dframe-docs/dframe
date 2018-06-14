@@ -2,7 +2,11 @@
 
 .. meta::
     :description: Installation - How to install dframe - dframeframework.com
-    :keywords: dframe, instalation, composer, github, download, chmod, dframeframework   
+    :keywords: dframe, instalation, composer, github, download, chmod, dframeframework
+    
+.. meta:: property
+    :og:locale: en_EN
+
 
 Setup Project
 ===========
