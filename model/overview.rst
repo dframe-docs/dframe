@@ -1,7 +1,7 @@
 .. title:: Model - Create methods that have database queries
 
 .. meta::
-    :description: Model - Send your query with database - dframeframework.com
+    :description: In the model, you can create methods that have database queries and are responsible for data processing.
     :keywords: dframe, model, mysql, database, dframeframework  
     
 
