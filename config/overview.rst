@@ -1,14 +1,14 @@
 .. title:: Config - Help you load configuration from file.
 
 .. meta::
-    :description: Help you load configuration from file. - dframeframework.com
+    :description: Helps you load the configuration from a file.
     :keywords: dframe, config, loading, loader, dframeframework
     
 
 Description
 ===========
 
-One of the solutions that are often useful. Singular files defining the configuration of a givem module. There will be Config/router.php oraz Config/View/smarty.php in the example version of the application.
+Helps you load the configuration from a file. One of the solutions that are often useful. Singular files defining the configuration of a givem module. There will be Config/router.php oraz Config/View/smarty.php in the example version of the application.
 
 .. code-block:: php
 
