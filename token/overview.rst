@@ -1,7 +1,7 @@
 .. title:: Token - Library used to create tokens secures you against CSRF
 
 .. meta::
-    :description: Token - Library used to create tokens secures you against CSRF - dframeframework.com
+    :description: Library used to create tokens secures you against CSRF (Cross-Site Request Forgery), so against unauthorized executing of action.
     :keywords: dframe, Token, CSRF, tokens, Cross-Site Request Forgery, dframeframework  
 
 Tokens
