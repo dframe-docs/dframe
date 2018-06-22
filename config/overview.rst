@@ -5,10 +5,7 @@
     :keywords: dframe, config, loading, loader, dframeframework
     
 
-Description
-===========
-
-Helps you load the configuration from a file. One of the solutions that are often useful. Singular files defining the configuration of a givem module. There will be Config/router.php oraz Config/View/smarty.php in the example version of the application.
+Helps you load the configuration from a file. One of the solutions that are often useful. Singular files defining the configuration of a givem module. There will be Config/router.php and Config/View/smarty.php in the example version of the application.
 
 .. code-block:: php
 
