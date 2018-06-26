@@ -59,9 +59,10 @@ defines the way the additional foo=bar parameters should be interpreted.
          'error/:code' => array(
              'error/[code]/', 
              'task=page&action=error&type=[code]',
+             'code' => '([0-9]+)',
              'args' => array(
                  'code' => '[code]'
-             )
+             ),
          ),
          
         ':task/:action' => array(
