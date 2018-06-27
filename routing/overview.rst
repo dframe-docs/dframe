@@ -98,8 +98,11 @@ Controller
 .. code-block:: php
 
  <?php
+ 
  namespace Controller;
+ 
  use Dframe\Controller;
+ use Dframe\Router\Response;
  
  class PageController extends Controller
  {
@@ -215,9 +218,9 @@ assign - it's a method of the template engine that assignes value to a variable 
 
 .. center::
 
- Dframe\Router\Response
+ Dframe\Router\Response;
 
-Extention of the basic DframeRouter is DframeRouterResponse, adding functionality of setting the response status (404, 500, etc.) and their headers.
+Extention of the basic **Dframe\Router** is **Dframe\Router\Response**, adding functionality of setting the response status (404, 500, etc.) and their headers.
 
 .. code-block:: php
 
