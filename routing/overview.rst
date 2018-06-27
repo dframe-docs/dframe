@@ -1,4 +1,4 @@
-.. title:: Routing - Flexibility url creator
+.. title:: Routing - Simple PHP Router
 
 .. meta::
     :description: Routing - Flexibility url creator - dframeframework.com
