@@ -4,6 +4,8 @@
     :description: Routing - Flexibility url creator - dframeframework.com
     :keywords: dframe, router, routing, urls, url, friendlyurl, htaccess, routes, dframeframework  
 
+Creating an application, it's worth taking care of their friendly links. Its has a big part in position in SEO. Link router work in a similar way as network router. It is responsible for calling the method from controller.
+
 Configuration
 ===========
 
