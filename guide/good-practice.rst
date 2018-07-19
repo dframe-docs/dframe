@@ -48,7 +48,7 @@ If you are using JSON try like this
  public function myProcetedAndPostMethod()
  {
      if ($this->baseClass->session->authLogin() != true) {
-         return Response::renderJSON(array('code' => '401', 'message' => 'Unauthorized'))->status(401);
+         return Response::renderJSON(['code' => '401', 'message' => 'Unauthorized'])->status(401);
      }
 
      $method = $_SERVER['REQUEST_METHOD'];
@@ -61,7 +61,7 @@ If you are using JSON try like this
         case 'POST'
         
            if (!isset($_POST['someValue']) AND !empty($_POST['someValue'])) {
-              return Response::renderJSON(array('code' => '400', 'message' => 'Bad Request', 'errors' => array('Invalid Values'))))->status(400);
+              return Response::renderJSON(['code' => '400', 'message' => 'Bad Request', 'errors' => ['Invalid Values']]))->status(400);
            }
 
            $FirstModel = $this->loadModel('First');
@@ -69,12 +69,12 @@ If you are using JSON try like this
            
            /* ... */
            
-           return Response::renderJSON(array('code' => '200', 'message' => '', 'data' => array()));
+           return Response::renderJSON(['code' => '200', 'message' => '', 'data' => []]);
            break;
            
      }
      
-     return Response::renderJSON(array('code' => '405', 'message' => 'Method Not Allowed'))->status(405);
+     return Response::renderJSON(['code' => '405', 'message' => 'Method Not Allowed'])->status(405);
      
      //...
  }
