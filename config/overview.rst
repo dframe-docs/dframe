@@ -9,13 +9,13 @@ Helps you load the configuration from a file. One of the solutions that are ofte
 
 .. code-block:: php
 
- return array(
+ return [
      'setTemplateDir' => APP_DIR.'View/templates',            // Default './View/templates'
      'setCompileDir' => APP_DIR.'View/templates_c',           // Default './View/templates_c'
      'addPluginsDir' => '',                                  // Default template dir ./Libs/Plugins/smarty
      'debugging'     => false,                               // Default False
      'fileExtension' => '.html.php'                         // Default '.html.php'
- );
+ ];
 
 In practise, it's used for many basic thing from data download. In the example application, it's used to download "setTemplateDir". In the other case, where there wouldn't be a seet value, it's supposed to load the path given as the second parameter.
 

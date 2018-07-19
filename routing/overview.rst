@@ -23,10 +23,10 @@ We define the table with adresses for our application in the configuration file
 
 .. code-block:: php
 
- '_params' => array(
+ '_params' => [
      '[name]/[value]/',
      '[name]=[value]'
- )
+ ]
 
 defines the way the additional foo=bar parameters should be interpreted.
 
@@ -36,13 +36,13 @@ defines the way the additional foo=bar parameters should be interpreted.
 
  <?php
  
- return array(
+ return [
      'https' => false,
      'NAME_CONTROLLER' => 'page',    // Default Controller for router
      'NAME_METHOD' => 'index',       // Default Action for router
      'publicWeb' => '',              // Path for public web (web or public_html)
  
-     'assets' => array(
+     'assets' => [
          'minifyCssEnabled' => true,
          'minifyJsEnabled' => true,
          'assetsDir' => 'assets',
@@ -50,45 +50,45 @@ defines the way the additional foo=bar parameters should be interpreted.
          'cacheDir' => 'cache',
          'cachePath' => APP_DIR.'../web/',
          'cacheUrl' => HTTP_HOST.'/',
-     ),
+     ],
  
-     'routes' => array(
-         'docs/:pageId' => array(
+     'routes' => [
+         'docs/:pageId' => [
              'docs/[pageId]/', 
              'task=page&action=[docsId]&type=docs'
-         ),
+         ],
          
-         'error/:code' => array(
+         'error/:code' => [
              'error/[code]/', 
              'task=page&action=error&type=[code]',
              'code' => '([0-9]+)',
-             'args' => array(
+             'args' => [
                  'code' => '[code]'
-             ),
-         ),
+             ],
+         ],
          
-        ':task/:action' => array(
+        ':task/:action' => [
             '[task]/[action]/[params]',
             'task=[task]&action=[action]',
             'params' => '(.*)',
-            '_params' => array(
+            '_params' => [
                 '[name]/[value]/',
                 '[name]=[value]'
-            )
-         ),
+            ]
+        ],
 
-         'default' => array(
+         'default' => [
              '[task]/[action]/[params]',
              'task=[task]&action=[action]',
              'params' => '(.*)',
-             '_params' => array(
+             '_params' => [
                  '[name]/[value]/', 
                  '[name]=[value]'
-             )
-         )
-    )   
+             ]
+         ]
+     ] 
  
- );
+ ];
 
 Controller
 -------------
@@ -140,7 +140,7 @@ Controller
          }
  
          $view->assign('error', $routerCodes::$code[$status]);
-         return Response::create($view->fetch('errors/' . htmlspecialchars($status)))->headers(array('refresh' => '4;' . $this->router->makeUrl(':task/:action?task=page&action=index')));
+         return Response::create($view->fetch('errors/' . htmlspecialchars($status)))->headers(['refresh' => '4;' . $this->router->makeUrl(':task/:action?task=page&action=index')]);
 
      }
  }
@@ -240,13 +240,13 @@ Render json
 
 .. code-block:: php
 
- return Response::renderJSON(array('return' => '1')); 
+ return Response::renderJSON(['return' => '1']); 
 
 Render json with callback
 
 .. code-block:: php
 
- return Response::renderJSONP(array('return' => '1')); 
+ return Response::renderJSONP(['return' => '1']); 
 
 Redirect
 
