@@ -240,13 +240,13 @@ Render json
 
 .. code-block:: php
 
- return Response::renderJSON(['return' => '1']); 
+ return Response::renderJSON(['code' => 200, 'data' => []]); 
 
 Render json with callback
 
 .. code-block:: php
 
- return Response::renderJSONP(['return' => '1']); 
+ return Response::renderJSONP(['code' => 200, 'data' => []]); 
 
 Redirect
 
