@@ -11,6 +11,17 @@ Simple PHP Router
 
 Creating an application, it's worth taking care of their friendly links. Its has a big part in position in SEO. Link router work in a similar way as network router. It is responsible for calling the method from controller.
 
+.. code-block:: php
+
+ $this->router->addRoute([
+     'page/:method' => [
+         'page/[method]/', 
+         'task=page&action=[method]'
+     ]
+ ]);
+ $this->router->makeUrl('page/:action?action=index'); // Return: https://example.php/page/index
+ $this->router->isActive('page/:action?action=index'); // Current Website true/false
+
 Configuration
 ===========
 
