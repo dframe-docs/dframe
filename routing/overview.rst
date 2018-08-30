@@ -124,12 +124,19 @@ Controller
  
  class PageController extends Controller
  {
+ 
+     /**
+      * @return bool
+      */
      public function index()
      {
          echo $this->router->makeUrl('docs/:docsId?docsId=23');
          return;
      }
  
+     /**
+      * @return mixed
+      */
      public function docs()
      {
  
@@ -138,6 +145,11 @@ Controller
          }
      }
  
+     /**
+      * @param string $status
+      *
+      * @return mixed
+      */
      public function error($status = '404')
      {
          $routerCodes = $this->router->response();
@@ -149,7 +161,7 @@ Controller
          $view = $this->loadView('index');
          $smartyConfig = Config::load('view/smarty');
  
-         $patchController = $smartyConfig->get('setTemplateDir', APP_DIR.'View/templates').'/errors/'.htmlspecialchars($status).$smartyConfig->get('fileExtension', '.html.php');
+         $patchController = $smartyConfig->get('setTemplateDir', APP_DIR . 'View/templates') . '/errors/' . htmlspecialchars($status) . $smartyConfig->get('fileExtension', '.html.php');
  
          if (!file_exists($patchController)) {
              return $this->router->redirect('error/:code?code=404');
@@ -157,9 +169,10 @@ Controller
  
          $view->assign('error', $routerCodes::$code[$status]);
          return Response::create($view->fetch('errors/' . htmlspecialchars($status)))->headers(['refresh' => '4;' . $this->router->makeUrl(':task/:action?task=page&action=index')]);
-
      }
+ 
  }
+ 
      
      
 .. |router| cCode:: 
@@ -222,17 +235,21 @@ assign - it's a method of the template engine that assignes value to a variable 
 .. code-block:: php
 
  namespace View;
+
  use Dframe\Asset\Assetic;
- 
- 
+
  class IndexView extends \View\View
  {
+
+     /**
+      * @return bool
+      */
      public function init()
      {
          $this->router->assetic = new Assetic();
          $this->assign('router', $this->router);
-
-         /* ... */
+     }
+ }
 
 .. center::
 
@@ -243,13 +260,14 @@ Extention of the basic **Dframe\Router** is **Dframe\Router\Response**, adding f
 .. code-block:: php
 
  return Response::create('Hello Word!')
-        ->status(200)
-        ->headers([
-            'Expires' => 'Mon, 26 Jul 1997 05:00:00 GMT',
-            'Cache-Control' => 'no-cache',
-            'Pragma', 'no-cache'
-        ]);
-
+     ->status(200)
+     ->headers([
+         'Expires' => 'Mon, 26 Jul 1997 05:00:00 GMT',
+         'Cache-Control' => 'no-cache',
+         'Pragma',
+         'no-cache'
+     ]);
+     
 For generating html.
 
 Render json
