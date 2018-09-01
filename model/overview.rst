@@ -12,20 +12,21 @@ In the model, you can create methods that have database queries and are responsi
 
 .. code-block:: php
 
- namespace Model;
-    
+    namespace Model;
+
     class RequestModel extends \Model\Model
     {
+
         /**
-         * @parms int 
-         * return [boolean, array]
+         * @param int $requestId
+         * @return mixed
          */
-    
         public function getRequestSettings($requestId)
         {
             $row = $this->baseClass->db->pdoQuery('SELECT * FROM `request_type` WHERE request_type_id = ?', [$requestId])->result();
-            return $this->methodResult(true, $row);     
+            return $this->methodResult(true, $row);
         }
+    }
 
 
 Notice that virtually all methods, except for a few, return the data in the form of a ready to read table and are returned by the method.
@@ -33,10 +34,9 @@ Notice that virtually all methods, except for a few, return the data in the form
 .. code-block:: php
 
  /**
- * @parms boolean
- * @parms array
+ * @param boolean
+ * @param array
  */
-
  $this->methodResult(true, $row);
 
 .. |github| fa-icon:: fa-github
