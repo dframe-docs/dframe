@@ -120,6 +120,10 @@ Controller
             }
         }
     
+       /**
+         * @param string $status
+         * @return mixed
+         */
         public function error($status = '404')
         {
             $routerCodes = $this->router->response();
