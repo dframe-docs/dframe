@@ -34,9 +34,9 @@ Notice that virtually all methods, except for a few, return the data in the form
 .. code-block:: php
 
  /**
- * @param boolean
- * @param array
- */
+   * @param boolean
+   * @param array
+   */
  $this->methodResult(true, $row);
 
 .. |github| fa-icon:: fa-github
