@@ -19,26 +19,21 @@ In this case, we download |sesok| and if it doesn't exist right away, we define 
 Assigning to |baseclass| is found in the app/bootstrap.php file, as |name|. Parameter is relayed to the object and defines the session name.
 
 =======
-Stalone
+Standalone
 =======
 
 Simplicity and minimalism make you want to use the same class. In order to achieve that, the following methods are available in the project.
 
-+--------------+-+
-| |newSession| | |
-+--------------+-+
-| |register|   | |
-+--------------+-+
-| |authLogin|  | |
-+--------------+-+
-| |set|        | |
-+--------------+-+
-| |get|        | |
-+--------------+-+
-| |remove|     | |
-+--------------+-+
-| |end|        | |
-+--------------+-+
+.. code-block:: php
+  
+ $this->session = new \Dframe\Session('name');
+ $session = new Session('HashSaltRandomForSession');
+ $session->register(); // Set session_id and session_time - default 60
+ $session->authLogin(); // Return true/false if session is registrer
+ $session->set($key, $value); // set $_SESSION[$key] = $value;
+ $session->get($key, $or = null); // get $_SESSION[$key];
+ $session->remove($key) // unset($_SESSION[$key]);
+ $session->end(); // session_destroy
 
 .. |get| cCode:: $this->baseClass->session->get('ok', false); 
 .. |sesok| cCode:: $_SESSION['ok']
