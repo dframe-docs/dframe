@@ -23,7 +23,7 @@ In the model, you can create methods that have database queries and are responsi
          */
         public function getRequestSettings($requestId)
         {
-            $row = $this->baseClass->db->pdoQuery('SELECT * FROM `request_type` WHERE request_type_id = ?', [$requestId])->result();
+            $row = $this->pdoQuery('SELECT * FROM `request_type` WHERE request_type_id = ?', [$requestId])->result();
             return $this->methodResult(true, $row);
         }
     }
