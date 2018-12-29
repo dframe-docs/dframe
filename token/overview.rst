@@ -26,7 +26,7 @@ Example usage:
      return Response::renderJSON(['code' => 403, 'message' => 'The form has expired.'])->status(403);
  }
             
- $evidenceToken = $this->baseClass->token->generate('evidenceToken')->getToken('evidenceToken');
+ $evidenceToken = $this->baseClass->token->generate('evidenceToken')->get('evidenceToken');
  
  
 Smarty3 Plugin
