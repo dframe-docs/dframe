@@ -71,8 +71,6 @@ To change all the files to 644 (-rw-r--r--):
 .. code-block:: bash
 
  find /opt/lampp/htdocs -type f -exec chmod 644 {} \;
- 
- 
 
 HTTP Server
 ----------
