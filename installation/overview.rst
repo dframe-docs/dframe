@@ -57,10 +57,6 @@ Not all folders exist at the start, but there are some. All files and folders, e
  chmod 777 -R app/View/templates_c
  chmod 777 -R app/View/uploads
  
- 
-.. |chmod755| cCode:: chmod 755
-.. |chmod664| cCode:: chmod 664
-.. |www-data| cCode:: www-data
 
 **How change permissions for a folder and all of its subfolders and files in Linux?**
 
@@ -76,6 +72,13 @@ To change all the files to 644 (-rw-r--r--):
 
  find /opt/lampp/htdocs -type f -exec chmod 644 {} \;
  
+ 
+.. |chmod755| cCode:: chmod 755
+.. |chmod664| cCode:: chmod 664
+.. |www-data| cCode:: www-data
+
+
+
 HTTP Server
 ----------
 
