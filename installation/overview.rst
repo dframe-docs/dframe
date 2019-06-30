@@ -64,13 +64,13 @@ To change all the directories to 755 (drwxr-xr-x):
 
 .. code-block:: bash
 
- find /opt/lampp/htdocs -type d -exec chmod 755 {} \;
+ $ find /opt/lampp/htdocs -type d -exec chmod 755 {} \;
 
 To change all the files to 644 (-rw-r--r--):
  
 .. code-block:: bash
 
- find /opt/lampp/htdocs -type f -exec chmod 644 {} \;
+ $ find /opt/lampp/htdocs -type f -exec chmod 644 {} \;
 
 HTTP Server
 ----------
