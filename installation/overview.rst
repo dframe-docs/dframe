@@ -73,11 +73,6 @@ To change all the files to 644 (-rw-r--r--):
  find /opt/lampp/htdocs -type f -exec chmod 644 {} \;
  
  
-.. |chmod755| cCode:: chmod 755
-.. |chmod664| cCode:: chmod 664
-.. |www-data| cCode:: www-data
-
-
 
 HTTP Server
 ----------
@@ -129,3 +124,8 @@ After installing, you should configure web server's document /web. Make sure you
        include fastcgi_params;
    }
 
+
+
+.. |chmod755| cCode:: chmod 755
+.. |chmod664| cCode:: chmod 664
+.. |www-data| cCode:: www-data
