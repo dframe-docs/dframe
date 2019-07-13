@@ -10,7 +10,8 @@ Description
 
 In the model, you can create methods that have database queries and are responsible for data processing. You have to remember to install dframe/database package before starting work. It's available on |github| GITHUB or through the composer.
 
-#How to load model?
+How to load model?
+===========
 
 In folder "Model" you must model named "RequestModel" should look like *Models/RequestModel.php*
 
