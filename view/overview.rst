@@ -36,7 +36,7 @@ To use view after load you must select template html.php by
          if (isset($this->router)) {
              $this->assign('router', $this->router);
      }
-     
+
 Changing engine template
 ===========     
 
