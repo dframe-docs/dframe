@@ -25,7 +25,7 @@ To use view after load you must select template html.php by
 
     $view->render('path/to/template/myTemplate'); // myTemplate shoud be in path View/template/path/to/template/myTemplate.html.php
     
-    
+
 **View/Index.php**
 
 .. code-block:: php
@@ -36,4 +36,20 @@ To use view after load you must select template html.php by
      {
          if (isset($this->router)) {
              $this->assign('router', $this->router);
-         }
+     }
+     
+Changing engine template
+===========     
+
+Default engine template is Smarty. You can switch to Twig or PHP. To do this do in to **View/View.php** and in find **$this->view**
+
+.. code-block:: php
+    /** @var \Dframe\View\SmartyView; view */
+    $this->view = new SmartyView();
+    
+You can implement Dframe\View\ViewInterface and use any engine you want.
+
+**Available by default**
+ - \Dframe\View\SmartyView
+ - \Dframe\View\TwigView
+ - \Dframe\View\DefaultView - php
