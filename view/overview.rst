@@ -50,6 +50,10 @@ Default engine template is Smarty. You can switch to Twig or PHP. To do this do 
 You can implement Dframe\View\ViewInterface and use any engine you want.
 
 **Available by default**
+
  - \Dframe\View\SmartyView
+
  - \Dframe\View\TwigView
+ 
  - \Dframe\View\DefaultView - php
+ 
