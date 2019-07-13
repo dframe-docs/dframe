@@ -25,7 +25,6 @@ To use view after load you must select template html.php by
 
     $view->render('path/to/template/myTemplate'); // myTemplate shoud be in path View/template/path/to/template/myTemplate.html.php
     
-
 **View/Index.php**
 
 .. code-block:: php
