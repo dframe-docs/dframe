@@ -302,6 +302,6 @@ Redirect
 .. |default| cCode:: default
 .. |params| cCode:: 'params' => '(.*)'
 
-.. |makeurl| cCode:: $this->router->makeUrl('docs/:docsId?docsId=23');
+.. |makeUrl| cCode:: $this->router->makeUrl('docs/:docsId?docsId=23');
 .. |header| cCode:: Header('Location: ""');
 .. |redirect| cCode:: $this->router->redirect(':task/:action?task=index&action=page');
