@@ -200,8 +200,8 @@ assign - it's a method of the template engine that assignes value to a variable 
    Example site created using the Dframe Framework
 
    Routing:
-   <?php $this->router->makeurl(':task/:action?task=index&action=page'); ?> <!-- http://example.com/index/page -->
-   <?php $this->router->makeurl('error/:code?code=404'); ?> <!-- http://example.com/page/404 -->
+   <?php $this->router->makeUrl(':task/:action?task=index&action=page'); ?> <!-- http://example.com/index/page -->
+   <?php $this->router->makeUrl('error/:code?code=404'); ?> <!-- http://example.com/page/404 -->
    <?php $this->router->publicWeb('css/style.css'); ?> <!-- http://example.com/css/style.css -->
 
    <?php $this->domain('https://example.com')->makeurl('error/:code?code=404'); ?> <! -- http://examplephp.com/page/404 -->
@@ -219,8 +219,8 @@ assign - it's a method of the template engine that assignes value to a variable 
    Example site created using the Dframe Framework
 
    Routing:
-   {$router->makeurl(':task/:action?task=index&action=page')} <! -- http://example.com/index/page -->
-   {$router->makeurl('error/:code?code=404')} <!-- http://example.com/page/404 -->
+   {$router->makeUrl(':task/:action?task=index&action=page')} <! -- http://example.com/index/page -->
+   {$router->makeUrl('error/:code?code=404')} <!-- http://example.com/page/404 -->
    {$router->publicWeb('css/style.css')}  <!-- http://example.com/css/style.css -->
 
    {$router->domain('https://examplephp.com')->makeurl('error/:code?code=404')}  <!-- http://examplephp.com/page/404 -->
