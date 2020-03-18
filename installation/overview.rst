@@ -128,7 +128,9 @@ Configuration
 
 After installation in file **web/config.php** you will find constant variables that are visible throughout the entire project. They should be set after installation.
 
-.. code-block:: nginx
+.. code-block:: php
+
+ <?php
 
  // Application name
  define('APP_NAME', "App name");  
