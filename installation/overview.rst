@@ -123,6 +123,26 @@ After installing, you should configure web server's document /web. Make sure you
    }
 
 
+Configuration
+----------
+
+After installation in file **web/config.php** you will find constant variables that are visible throughout the entire project. They should be set after installation.
+
+.. code-block:: nginx
+
+ // Application name
+ define('APP_NAME', "App name");  
+ 
+ // Check PSR-2: Coding Style
+ define('CODING_STYLE', true);    
+ 
+ // Website configuration
+ define('VERSION', "Dframe");     // Version aplication
+ define('SALT', "YOURSALT123");   // SALT default: YOURSALT123
+ 
+ // Website adress
+ define('HTTP_HOST', 'website.url');
+ 
 
 .. |chmod755| cCode:: chmod 755
 .. |chmod664| cCode:: chmod 664
