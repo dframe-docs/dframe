@@ -4,6 +4,36 @@
     :description: Controller - function where you create and returns a Response - dframeframework.com
     :keywords: dframe, controller, response, router, dframeframework
     
+    
+Controller
+---------
+The controller is called via pre-set routing. It is true that you do not need to set routing because the page can be loaded via
+directory path, e.g.
+
+* example.com/**{controller}**/**{method}** 
+* example.com/**{controller}**/**{method}**/**{params**/**{value}**
+* example.com/**{dir},{controller}**/**{method}**
+
+Nevertheless, in larger applications this can make it difficult to navigate and create links. You can use ** annotations ** or classic
+
+file config/router.php
+
+Pseudo constructors start(), init()
+---------
+
+In the application there would be no need to overwrite __construct by parent::__construct, in the framework have been added two methods
+*start()* and *init()*
+
+
+Method **start()** it is recommended to use it for **abstract** classes while **init()** to others. 
+
+*Note - In pseudo classes* **should not** *be loaded eg models and views by $this.*
+
+
+Example
+---------
+
+
 
 Controller
 ===========
