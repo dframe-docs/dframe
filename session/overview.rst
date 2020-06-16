@@ -8,6 +8,15 @@
 Description
 ===========
 
+This class can manage PHP session`s assigned with a name.
+It can take assign the name of the current session to a given name.
+The class also provides functions to provide features of interest like:
+
+- Assign a fingerprint value based on the current session name, user IP address and browser
+- Check if the current session fingerprint is still values
+- Set, get, check and delete one session variable
+- Set, get, check and delete multiple session variables at once
+
 This is a simple framework element, allowing for quick session operations in php. One-line defining of a global variable.
 
 Instead of checking whether it exists in one line, we receive those two things.
