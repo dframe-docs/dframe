@@ -12,7 +12,7 @@ You can declare or define functions there which can then be called in the view t
 How to load view?
 ===========
 
-In folder "View" is Index.php it's type of view. You can create difrent views for user or admin. Just copy "Index.php" and rename to your own name.
+In folder "View" is Index.php it's type of view. You can create different views for user or admin. Just copy "Index.php" and rename to your own name.
 
 .. code-block:: php
 
