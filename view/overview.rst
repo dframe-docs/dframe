@@ -12,6 +12,21 @@ You can declare or define functions there which can then be called in the view t
 How to load view?
 ===========
 
+Set first config
+
+.. code-block:: php
+
+    <?php
+
+    return [
+        'setTemplateDir' => APP_DIR . 'View/templates',            // Default './View/templates'
+        'setCompileDir' => CACHE_DIR . 'templates_c',           // Default './View/templates_c'
+        'addPluginsDir' => APP_DIR . 'Libs/Plugins/Smarty',                       // Default template dir ./Libs/Plugins/smarty
+        'debugging' => false,                               // Default False
+        'fileExtension' => '.html.php'                         // Default '.html.php'
+    ];
+
+
 In folder "View" is Index.php it's type of view. You can create different views for user or admin. Just copy "Index.php" and rename to your own name.
 
 .. code-block:: php
