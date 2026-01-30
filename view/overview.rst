@@ -12,18 +12,34 @@ You can declare or define functions there which can then be called in the view t
 How to load view?
 ===========
 
-Set first config
+# Setting the View Configuration
+
+You can set the initial configuration for your view templates in one of the following files:
+
+- `app/Config/view/default.php`  
+- `app/Config/view/smarty.php`  
+
+## Example Configuration
 
 .. code-block:: php
 
     <?php
-
+    
     return [
-        'setTemplateDir' => APP_DIR . 'View/templates',            // Default './View/templates'
-        'setCompileDir' => CACHE_DIR . 'templates_c',           // Default './View/templates_c'
-        'addPluginsDir' => APP_DIR . 'Libs/Plugins/Smarty',                       // Default template dir ./Libs/Plugins/smarty
-        'debugging' => false,                               // Default False
-        'fileExtension' => '.html.php'                         // Default '.html.php'
+        // Directory where templates are stored
+        'setTemplateDir' => APP_DIR . 'View/templates',  // Default: './View/templates'
+
+        // Directory where compiled templates are stored
+        'setCompileDir' => CACHE_DIR . 'templates_c',    // Default: './View/templates_c'
+
+        // Directory for Smarty plugins
+        'addPluginsDir' => APP_DIR . 'Libs/Plugins/Smarty',  // Default: './Libs/Plugins/smarty'
+
+       // Enable or disable debugging
+       'debugging' => false,  // Default: false
+
+        // Default file extension for templates
+        'fileExtension' => '.html.php'  // Default: '.html.php'
     ];
 
 
